@@ -1,0 +1,117 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: content-box;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#box {
+	background-color: aqua;
+	width: 40vw;
+	height: 80vh;
+}
+
+#box > p {
+	height: 5vh;
+	font-size: 3vh;
+	padding: 1vh;
+	padding-top: 2vh;
+	padding-left: 2vh;
+	text-align: center;
+}
+
+#acctype {
+	background-color: white;
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.type {
+	background-color: rgb(157, 157, 236);
+	width: 25%;
+	height: 90%;
+	border-radius: 7%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.type.active {
+	transform: scale(1.05);
+	box-shadow: 4px 4px gray;
+	border: 2px solid black;
+}
+
+.type > img {
+	width: 65%;
+	height: 55%;
+}
+
+.type > p {
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+#form {
+	background-color: brown;
+	width: 50%;
+	height: 40vh;
+	margin: auto;
+}
+
+#form > input {
+	outline: none;
+	height: 4vh;
+	width: 15vw;
+	position: relative;
+	left: 2vw;
+	padding: 3px;
+	font-size: 16px;
+	padding-left: 10px;
+	border: none;
+	border-radius: 10px;
+}
+
+#form > input[type="text"] {
+	top: 10vh;
+}
+
+#form > input[type="password"] {
+	top: 13vh;
+}
+
+#form > button {
+	position: relative;
+	width: 5vw;
+	height: 3vh;
+	top: 15vh;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 3px;
+	font-size: 16px;
+}
+
+#form > p {
+	position: relative;
+	top: 18vh;
+	left: 2vw;
+	font-size: 18px;
+}
+
+#typeof {
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+}

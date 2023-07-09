@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up</title>
+	<link href="Donar_signup.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="form-box">
+		<div class="header-text">
+		<br>
+		<br>
+			Donor Sign Up
+		</div>
+		<form action="Donar_signup.php" method="post">
+		<table width="100%"  border="0" cellpadding="0" cellspacing="0" class="ptry">
+			<form action="Donar_signup.php" method="post">
+			<tr>
+			<td width="30%" align="right"> First name:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><input placeholder="First Name" type="text" name="fname"></td>
+			</tr>
+			<tr>
+			<td width="30%" align="right">Last name:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><input placeholder="Last Name" type="text" name="lname"></td>
+			</tr>
+			
+		
+			<tr>
+			<td width="30%" align="right">Enter password:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><input placeholder="Your Password" type="password" name="pass1"></td>
+			</tr>
+			
+			<tr>
+			<td width="30%" align="right">Confirm password :&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><input placeholder="Your Password" type="password" name="pass2"></td>
+			</tr>
+			
+			<tr>
+		      	<td width="30%" align="right"> Mobile No.:&nbsp;&nbsp;&nbsp;&nbsp; </td>
+		        <td><input id="mobile" placeholder=" Mobile no." name="mobile" type="text" maxlength="10"/></td>
+		      </tr>
+			 
+			<tr>
+			<td width="30%" align="right">Date of Birth:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><input placeholder="Date of Birth" type="text" name="dob"></td>
+			</tr>
+			
+			<tr>
+			      	<td width="30%" align="right"> Choose Blood Type:&nbsp;&nbsp;&nbsp;&nbsp; </td>
+			        <td>
+			        	<select name="group">
+			        	    <option value="-1">Select Blood Type</option>
+			        		<option value="A+">A+</option>
+			        		<option value="A-">A-</option>
+							<option value="B+">B+</option>
+			        		<option value="B-">B-</option>
+							<option value="O+">O+</option>
+			        		<option value="O-">O-</option>
+							<option value="AB+">AB+</option>
+			        		<option value="AB-">AB-</option>
+			        		
+			        	</select>
+			        </td>
+			</tr>  
+			<tr>
+		      	<td width="30%" align="right">Address:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		        <td> 
+				<input type="text" name="address"   style="background: white;border: 1px;">
+		        </td>
+		    </tr>
+			
+			<tr>
+			<td width="30%" align="right"> City:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><input placeholder="Your City" type="text" name="city"></td>
+			</tr>
+			
+			<tr>
+			<td width="30%" align="right">State:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><input placeholder="Your State" type="text" name="state"></td>
+			</tr>
+			
+			<tr>
+			<td width="30%" align="right"> PIN:&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><input placeholder="Your PIN" type="text" name="pin"></td>
+			</tr>
+
+			   <tr>
+		      	<td align="right">Select Gender &nbsp;&nbsp;&nbsp;&nbsp;</td>
+		      	<td>
+			      <select name="gender">
+							<option value="-1">-- Please Select --</option>
+							<option value="Female">Female</option>
+							<option value="Male">Male</option>
+							<option value="Other">Other</option>
+				</select></td>
+		      </tr>
+			  <tr><td></td>
+			  <td><button>Submit </button></td>
+			  </tr>
+			</form>
+		</table>
+		</form>
+	
+	  
+	</div>
+	
+</body>
+</html>

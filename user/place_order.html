@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="About_you_user.css">
+</head>
+<body>
+    <div id="cont">
+        <div id="nav">
+            <ul>
+                <li> <a href="About_you_user.php">About you</a> </li>
+                <li><a class="active" href="place_order.html">place orders</a></li>
+                <li><a href="User_previous_orders.php">Your previous record</a></li>
+                <li><a  href="Edit_profile.html">Edit profile</a></li>
+                <li><a href="/Blood_Donation_system/login/login.html">Log out</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="head">
+                
+            </div>
+            <div id="con">
+               <h1 align='center'>PLACE YOUR ORDER</h1>
+				<br><br>
+				
+				<table align='center' style="width:50%" class="center" >
+				<h4>
+				<form action="place_order.php" method="post">
+				<tr>
+				    <td><b>Branch id:</b></td>
+					<td > <input type="number" name="br_id" value=""> </td>
+				</tr>
+				<tr>	
+					<td><b>Enter required quantity of blood:</b></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><b>A +ve:</b></td>
+					<td><input type="number" name="a_p" value="0"> </td>
+				</tr>
+				<tr>
+					<td><b>A -ve:</b></td>
+					<td><input type="number" name="a_n" value="0"></td>
+				</tr>
+				<tr>
+					<td><b>B +ve:</b></td>
+					<td><input type="number" name="b_p" value="0"></td>
+				</tr>
+				<tr>
+					<td><b>B -ve:</b></td>
+					<td><input type="number" name="b_n" value="0"></td>
+				</tr>
+				<tr>
+					<td><b>O +ve:</b></td>
+					<td ><input type="number" name="o_p" value="0"></td>
+				</tr>
+				<tr>
+					<td><b>O -ve:</b></td>
+					<td><input type="number" name="o_n" value="0"></td>
+				</tr> 
+				<tr>
+					<td><b>AB +ve:</b></td>
+					<td > <input type="number" name="ab_p" value="0"></td>
+				</tr>
+				<tr>
+					<td><b>AB -ve:</b></td>
+					<td ><input type="number" name="ab_n" value="0"></td>
+				</tr>
+				<tr>
+					<td><b></b></td>
+					<td><input type="submit" value="Submit"></td>
+				</tr>
+			</form>
+				</h4>
+				</table>
+				
+				
+            </div>
+        </div>
+    </div>
+
+    <script src="User.js"></script>
+</body>
+</html>

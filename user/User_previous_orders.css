@@ -1,0 +1,100 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: content-box;
+	overflow-x: hidden;
+}
+
+#cont {
+	background-color: aqua;
+	width: 100vw;
+	min-height: 100vh;
+}
+
+#nav {
+	width: 15vw;
+	height: 100vh;
+	background-color: brown;
+	position: fixed;
+}
+
+#main {
+	width: 85vw;
+	min-height: 100vh;
+	background-color: burlywood;
+	margin-left: 15vw;
+}
+
+#nav ul {
+	margin-top: 9vh;
+}
+
+#nav li a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	text-align: center;
+	font-size: 22px;
+	margin-left: 1vh;
+	margin-right: 1vh;
+	border-radius: 10px;
+}
+
+#nav li a:hover {
+	background-color: chocolate;
+}
+
+#nav li .active {
+	background-color: chocolate;
+}
+
+#main #head {
+	width: 85vw;
+	height: 8vh;
+	background-color: cyan;
+	position: fixed;
+}
+
+#main #head > p {
+	display: inline-block;
+	float: right;
+	padding: 1.5vh;
+	padding-right: 4vw;
+	text-align: center;
+	line-height: 19px;
+}
+
+#con {
+	margin-top: 9vh;
+	text-align: center;
+}
+
+table {
+	border-spacing: 0px;
+	font-size: 20px;
+}
+
+tr {
+	border-bottom: 1px solid rgb(0, 0, 0);
+}
+th {
+	font-size: 25px;
+	padding: 10px;
+	border-bottom: 1px solid black;
+}
+tr:hover {
+	background-color: #d6eeee;
+}
+
+td {
+	padding: 10px;
+	text-align: center;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="box">
+        <p>Select your account type</p>
+        <div id="acctype">
+            <div class="type active" id="type1">
+                <img src="https://img.icons8.com/external-kmg-design-outline-color-kmg-design/100/000000/external-donor-medical-kmg-design-outline-color-kmg-design.png"/>
+                <p>Donor</p>
+            </div>
+            <div class="type" id="type2">
+                <img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-hospital-coronavirus-justicon-flat-justicon.png"/>
+                <p>Hospital</p>
+            </div>
+            <div class="type" id="type3">
+                <img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/100/000000/external-manager-management-kiranshastry-gradient-kiranshastry.png"/>
+                <p>Manager</p>
+            </div>
+        </div>
+        <form action="login.php" method="post">
+        <div id="form">
+            <input type="text" name="username" id="loginid" placeholder="Username">
+            <input type="password" name="pass" id="password" placeholder="Password">
+            <input type="number" name="typeofacc" id="typeof">
+            <button id="login" type="submit">login</button>
+            <p>Don't have account? <a href="#">sign up</a> </p>
+        </div>
+    </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

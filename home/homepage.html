@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="homepage.css">
+	  <title>Blood Donation</title>
+  </head> 
+  <body>
+				<div id="topnav">
+					<a href="/Blood_Donation_system/login/login.html">Login</a>
+					<a href="/Blood_Donation_system/SignUp/Signup.html">Sign Up</a>
+				</div>
+			 
+      <div class="conta">
+        <div class="  con active"><h2 style="padding-top:180px;">When was the last time you donated blood?</h2></div>
+        <div class="con"><h3>Rules for donating blood</h3></div>
+        <div class="con"><h1 style="color: white">Donate Blood and Save lives!</h1></div>
+		<div class="con"><h3>Benefits of blood donation</h3></div>
+    </div>
+	<div id="main">
+          <div id="blur">
+               
+                   <div class="four">
+                       <h1>Blood Donation <br>System</h1>
+                       
+                   </div>
+	</div>
+	<div class="arrow">
+              <img src="arrow2.png" id="left">
+              <div class="images">
+                <img src="bd0.jpg" class=" first img active">
+                <img src="bd1.jpg" class="img">
+                <img src="bd7.jpg" class="img">
+				<img src="bd10.png" class="img">
+              </div> 
+    
+              <img src="arrow1.png" id="right">
+          </div>
+      </div>
+	<script>
+          var left =document.getElementById("left");
+          var right =document.getElementById("right");
+          var img =document.getElementsByClassName("img");
+          var con =document.getElementsByClassName("con");
+          var one =document.getElementById("one");
+          var backgroundImg = new Array(
+              "bd0.jpg",
+              "bd1.jpg",
+              "bd7.jpg",
+			        "bd10.png"
+               
+              );
+         let i=0;
+        right.onclick=function()
+        {
+           if(i<3)
+           {
+            main.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+            img[i+1].classList.add("active");   
+            img[i].classList.remove("active");
+            con[i+1].classList.add("active");   
+            con[i].classList.remove("active"); 
+              
+            i++;
+           } 
+      
+        }
+        left.onclick=function()
+        {
+           if(i>0)
+           {
+            main.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+            img[i-1].classList.add("active");   
+            img[i].classList.remove("active");
+            con[i-1].classList.add("active");   
+            con[i].classList.remove("active");
+                
+            i--;
+           } 
+      
+        }
+        
+      </script>
+  </body> 
+</html>  

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager</title>
+    <link rel="stylesheet" href="About_you_manager.css">
+</head>
+<body>
+    <div id="cont">
+        <div id="nav">
+            <ul>
+                <li> <a style="background-color: transparent;" href="About_you_manager.php">About you</a> </li>
+              <li><a  href="Manager_new_record.php">New orders</a></li>
+              <li><a  href="Manager_previous_record.php">Your previous record</a></li>
+              <li><a  href="view_departments.php">View Department</a></li>
+              <li><a  href="view_staff.php">View staff</a></li>
+              <li><a  href="Add_staff.html">Add staff</a></li>
+              <li><a style="background-color: chocolate;" href="Add_donations.html">Add Donations</a></li>
+              <li><a href="/Blood_Donation_system/login/login.html">Log out</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="head">
+                
+            </div>
+            <div id="con">
+                <h1>Add Donations</h1>
+                <br><br>
+                <form action="Add_donations.php" method="post">
+                <table align='center' style="width:50%" class="center">
+                    <h4>
+                    <tr>
+                      <td><b>Donor ID:</b></td>
+                      <td><input type="number" name="donor_id" style="height: 3vh;" value=""></td>
+                    </tr>
+
+                    <tr> 
+                    <td></td>
+					<td><button type="submit" style="padding: 1vh;">Add</button></td>
+                    </tr>
+                    </h4>
+                  </table>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="Manager.js"></script>
+</body>
+</html>
