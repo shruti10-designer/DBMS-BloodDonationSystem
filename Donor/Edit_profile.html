@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="Edit_profile.css">
+</head>
+<body>
+    <div id="cont">
+        <div id="nav">
+            <ul>
+                <li> <a style="background-color: transparent;" href="About_you_donor.php">About you</a> </li>
+                <li><a href="Donor_previous_record.php">Your previous record</a></li>
+                <li><a style="background-color: chocolate;" href="Edit_profile.html">Edit profile</a></li>
+                <li><a href="/Blood_Donation_system/login/login.html">Log out</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="head">
+                
+            </div>
+            <div id="con">
+               <h1 align='center'>Edit profile</h1>
+				<br><br>
+				<form action="Edit_profile.php" method="post">
+				<table align='center' style="width:50%" class="center" >
+				<h4>
+				<tr>
+					<td><b>Phone no:</b></td>
+					<td><input type="number" name="phno"  style="height: 3vh;" value="" ></td>
+				</tr>
+				
+				<tr>
+					<td><b>Address:</b></td>
+					<td><input type="text" name="address" style="height: 3vh;" value=""></td>
+				</tr> 
+				<tr>
+					<td><b>City:</b></td>
+					<td ><input type="text" name="city" style="height: 3vh;" value=""> </td>
+				</tr>
+				<tr>
+					<td><b>State:</b></td>
+					<td ><input type="text" name="state" style="height: 3vh;" value=""></td>
+				</tr>
+				<tr>
+					<td><b>Pin:</b></td>
+					<td><input type="text" name="pin" style="height: 3vh;" value=""></td>
+				</tr>
+				<tr>
+					<td><b>New Password:</b></td>
+					<td><input type="password" name="pass1" style="height: 3vh;" value=""></td>
+				</tr>
+				<tr>
+					<td><b>Confirm new Password:</b></td>
+					<td><input type="password" name="pass2" style="height: 3vh;" value=""></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button type="submit" style="padding: 1vh;">Save</button></td>
+				</tr>
+				</h4>
+				</table>
+			</form>
+            </div>
+        </div>
+    </div>
+
+    <script src="Donor.js"></script>
+</body>
+</html>
